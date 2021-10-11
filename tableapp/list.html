@@ -44,59 +44,33 @@
         <div class="row">
             <div class="col">
                 <div class="jumbotron">
-                    <h1 class="display-4">Here is our booking list!!</h1>
+                    <h1 class="display-4">Here is our booking list!</h1>
                     <p class="lead">Call them to confirm!</p>
                 </div>
             </div>
         </div>
 
-        <!-- Booking Form -->
-        <div class="row">
-          <div class="col">
-              <button type="button" class="btn btn-primary" id="refreshNow">Refresh Now</button>
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Pax</th>
-                    <th scope="col">Remarks</th>
-                    <th scope="col">Task</th>
-                  </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              </table>
-          </div>
-        </div>
-        
+        <!-- Booking List -->
         <div class="row">
             <div class="col">
-                <div class="form-group">
-                    <label for="userPax">Pax</label>
-                    <select class="form-control" id="userPax">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                        <option>6</option>
-                        <option>7</option>
-                        <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
-                    </select>
-                </div>
-            </div>
-            <div class="col">
-                <div class="form-group">
-                    <label for="userRemarks">Remarks</label>
-                    <textarea class="form-control" id="userRemarks" rows="3"></textarea>
-                </div>
-                <button type="button" class="btn btn-primary float-right" id="bookNow">Book Now</button>
+                <button type="button" class="btn btn-primary" id="refreshNow">Refresh Now</button>
+                <table class="table table-striped" id="bookingNameList">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Pax</th>
+                            <th scope="col">Remarks</th>
+                            <th scope="col">Task</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
             </div>
         </div>
+
 
 
     </div>
