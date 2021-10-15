@@ -1,7 +1,7 @@
 let bookNowBtn = document.getElementById("bookNow")
-bookNowBtn.addEventListener("click", function (){
+bookNowBtn.addEventListener("click", function () {
     let userName = document.getElementById("userName")
-    let usernNameVal = userName.value
+    let userNameVal = userName.value
 
     let userEmail = document.getElementById("userEmail")
     let userEmailVal = userEmail.value
@@ -10,16 +10,32 @@ bookNowBtn.addEventListener("click", function (){
     let userPaxVal = userPax.value
 
     let userRemarks = document.getElementById("userRemarks")
-    let usernRemarksVal = userRemarks.value
+    let userRemarksVal = userRemarks.value
 
-BoonNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal)
+    BookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal)
 })
 
-function BookNow (UserName,userEmail, userPax, userRemarks){
-    console.log(userName)
-    console.log(userEmail)
-    console.log(userPax)
-    console.log(userRemarks)
-}
-
+function BookNow(userName, userEmail, userPax, userRemarks) {
+    let url = 'https://api.sheety.co/3916d578b401ffa66a19148295d570ad/bookingApp/bookings';
+    let body = {
+        booking: {
+            name: userName,
+            email: userEmail,
+            pax: userPax,
+            remarks: userRemarks
+        }
+    }
+    fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(body),
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+        .then((response) => response.json())
+        .then(json => {
+            // Do something with object
+            console.log(json.booking);
+            alert(json.booking.name + " added in the list!")
+        });
 }
