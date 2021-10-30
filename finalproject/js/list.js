@@ -30,8 +30,8 @@ function getBooking(){
             row.insertCell(0).innerHTML = gId
             row.insertCell(1).innerHTML = gName
             row.insertCell(2).innerHTML = gEmail
-            row.insertCell(3).innerHTML = Variant
-            row.insertCell(4).innerHTML = Quantity
+            row.insertCell(3).innerHTML = gVariant
+            row.insertCell(4).innerHTML = gQuantity
             row.insertCell(5).innerHTML = gRemarks
             row.insertCell(6).innerHTML = "<button id='"+ btnId + "'type='button' class='btn btn-danger'> Delete</button>"
 
