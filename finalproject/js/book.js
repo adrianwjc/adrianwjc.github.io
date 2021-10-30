@@ -41,6 +41,6 @@ function preOrderNow(userName, userEmail, userVariant, userQuantity,userRemarks)
     .then(json => {
         // Do something with object
         console.log(json.preorder);
-        alert(json.booking.name +" have pre-ordered " + json.booking.variant + " quantity " + json.booking.quantity + " in the list.")
+        alert(json.preorder.name +" have pre-ordered " + json.preorder.variant + " quantity " + json.preorder.quantity + " in the list.")
     });
 }
