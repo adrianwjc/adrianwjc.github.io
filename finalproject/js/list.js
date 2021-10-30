@@ -17,13 +17,13 @@ function getBooking(){
             bookingNameList.deleteRow(k)
         }
 
-        for( let i = 0; i<json.preOrder.length; i++){
-            let gName = json.preOrder[i].name;
-            let gEmail = json.preOrder[i].email;
-            let gVariant = json.preOrder[i].variant;
-            let gQuantity = json.preOrder[i].quantity;
-            let gRemarks = json.preOrder[i].remarks;
-            let gId = json.preOrder[i].id;
+        for( let i = 0; i<json.bookings.length; i++){
+            let gName = json.bookings[i].name;
+            let gEmail = json.bookings[i].email;
+            let gVariant = json.bookings[i].variant;
+            let gQuantity = json.bookings[i].quantity;
+            let gRemarks = json.bookings[i].remarks;
+            let gId = json.bookings[i].id;
             let btnId = "delete"+ gId
 
             let row = bookingNameList.insertRow(bookingNameList.rows.length)
@@ -53,7 +53,7 @@ function getBooking(){
 
 function DeleteBooking(id){
 
-    let url = 'https://api.sheety.co/037280b6973c5dbe7ff7a69aaa72d0a9/courtBookingApp/courtBooking/2';
+    let url = 'https://api.sheety.co/3916d578b401ffa66a19148295d570ad/finalProject/bookings';
     fetch(url, {
         method: 'DELETE',
     }) 
