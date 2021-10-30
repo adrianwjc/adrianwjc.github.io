@@ -40,7 +40,7 @@ function PreOrderNow(userName, userEmail, userVariant, userQuantity,userRemarks)
     .then((response) => response.json())
     .then(json => {
         // Do something with object
-        console.log(json.courtBooking);
-        alert(json.courtBooking.name +" have book " + json.courtBooking.court + " Court for " + json.courtBooking.hour + " & added to your list. Please Check You Booking List ")
+        console.log(json.booking);
+        alert(json.booking.name +" have book " + json.courtBooking.court + " Court for " + json.courtBooking.hour + " & added to your list. Please Check You Booking List ")
     });
 }
