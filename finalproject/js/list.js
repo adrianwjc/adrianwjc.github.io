@@ -9,7 +9,7 @@ function getBooking(){
         .then((response) => response.json())
         .then(json => {
         // Do something with the data
-        console.log(json.bookings);
+        console.log(json.booking);
         let bookingNameList = document.getElementById("bookingNameList")
         let bookingIds = []
 
@@ -18,7 +18,7 @@ function getBooking(){
         }
 
         for( let i = 0; i<json.booking.length; i++){
-            let gName = json.bookings[i].name;
+            let gName = json.booking[i].name;
             let gEmail = json.booking[i].email;
             let gVariant = json.booking[i].variant;
             let gQuantity = json.booking[i].quantity;
