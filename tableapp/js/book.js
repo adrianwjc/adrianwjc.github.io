@@ -1,4 +1,4 @@
-let bookNowBtn = document.getElementById("bookNow")
+let bookNowBtn = document.getElementById("PreOrderNow")
 bookNowBtn.addEventListener("click", function () {
     let userName = document.getElementById("userName")
     let userNameVal = userName.value
@@ -6,16 +6,19 @@ bookNowBtn.addEventListener("click", function () {
     let userEmail = document.getElementById("userEmail")
     let userEmailVal = userEmail.value
 
-    let userPax = document.getElementById("userPax")
-    let userPaxVal = userPax.value
+    let userPax = document.getElementById("userVariant")
+    let userVariantVal = userVariant.value
+
+    let userQuantity = document.getElementById("userQuantity")
+    let userQuantityVal = userQuantity.value
 
     let userRemarks = document.getElementById("userRemarks")
     let userRemarksVal = userRemarks.value
 
-    BookNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal)
+    PreOrderNow(userNameVal, userEmailVal, userPaxVal, userRemarksVal)
 })
 
-function BookNow(userName, userEmail, userPax, userRemarks) {
+function PreOrderNow(userName, userEmail, userPax, userRemarks) {
     let url = 'https://api.sheety.co/3916d578b401ffa66a19148295d570ad/bookingApp/bookings';
     let body = {
         booking: {
