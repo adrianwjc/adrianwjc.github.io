@@ -19,7 +19,7 @@ bookNowBtn.addEventListener("click",function(){
 })
 
 
-function PreOrderNow(userName, userEmail, userVariant, userQuantity,userRemarks){
+function bookNow(userName, userEmail, userVariant, userQuantity,userRemarks){
     let url = 'https://api.sheety.co/3916d578b401ffa66a19148295d570ad/finalProject/bookings';
     let body = {
         booking: {
@@ -41,6 +41,6 @@ function PreOrderNow(userName, userEmail, userVariant, userQuantity,userRemarks)
     .then(json => {
         // Do something with object
         console.log(json.booking);
-        alert(json.booking.name +" have book " + json.courtBooking.court + " Court for " + json.courtBooking.hour + " & added to your list. Please Check You Booking List ")
+        alert(json.booking.name +" have pre-ordered " + json.booking.variant + " quantity of " + json.booking.quantity + " & added in the list.")
     });
 }
