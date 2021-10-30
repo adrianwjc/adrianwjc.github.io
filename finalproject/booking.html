@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Acai2u Pre-Order Booking - Booking Page</title>
+</head>
+<body>
+    <div class="container-fluid">
+        
+        <!--Nav Bar = copy form bootstrap-->
+
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Acai2u Pre-Order Form</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="book.html">Book</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="list.html">List</a>
+                            </li>
+                      </ul>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+
+       
+        <!-- Jumbotron -->
+        <div class="row">
+            <div class="col">
+                <div class="jumbotron">
+                    <h1 class="display-4">Pre-Order Now!</h1>
+                    <p class="lead">Choose from Unsweetend and Naturally Sweetened Açaí</p>
+                    <ul class="list-unstyled">
+                        <li class="media">
+                          <img src="https://cf.shopee.com.my/file/3ff932eb28e14afa605f4d49a36311c1" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Unsweetened Açaí</h5>
+                            <p>Amafruits acai purees are made from USDA organic acai, harvested in the wild from the rainforests of Brazil. Amafruits “Pure and Unsweetened” purees contain absolutely no thickeners, fillers, mixers, or added sugar.</p>
+                          </div>
+                        </li>
+                        <li class="media my-4">
+                          <img src="https://cf.shopee.com.my/file/9f3ba253e9db4f78db559bb8920d209a" class="mr-3" alt="...">
+                          <div class="media-body">
+                            <h5 class="mt-0 mb-1">Naturally Sweetened Açaí</h5>
+                            <p>Amafruits acai purees are made from USDA organic acai, harvested in the wild from the rainforests of Brazil. Amafruits “Traditional Mix” puree is sweetened with a touch of guaranå with no preservatives, thickeners, or filler juices.</p>
+                          </div>
+                        </li>
+                      </ul>
+                  </div>
+            </div>
+        </div>
+        
+        <!-- Booking Form -->
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Name</label>
+                    <input type="taxt" class="form-control" id="userName" >
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="userEmail" >
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+            </div>      
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Court</label>
+                    <select class="form-control" id="userCourt">
+                      <option>Unsweetened</option>
+                      <option>Naturally Sweetened</option>
+                    </select>
+              </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Quantity</label>
+                    <select class="form-control" id="playHour">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+              </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Remarks</label>
+                    <textarea class="form-control" id="userRemarks" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn btn-primary float-right" id="bookNow">Pre-Order Now</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+
+    <script src="js/book.js"></script>
+</body>
+</html>
