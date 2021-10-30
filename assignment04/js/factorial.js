@@ -41,5 +41,5 @@ getBtn.addEventListener("click", function () {
     let getNumber = document.getElementById("getNumber")
     //alert(getNumber.value)
     a = factor(getNumber.value)
-    alert("The factorial for the value you entered is: " + a)
+    alert("The factorial for the number you entered is: " + a)
 })
