@@ -11,8 +11,8 @@ function savevalue(_inp){
     }
     arr2.push(_inp)
     //console.log(arr2)
-    eldisplay.innerHTML = "The value(s) entered are: " + arr2
-    alert("The value you entered: " + _inp + " !")
+    eldisplay.innerHTML = "The number(s) you've entered are: " + arr2
+    alert("The value you entered: " + _inp)
 }
 
 let elButton = document.getElementById("btnGetValue")
