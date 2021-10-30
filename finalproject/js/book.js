@@ -15,7 +15,7 @@ bookNowBtn.addEventListener("click",function(){
     let userRemarks  = document.getElementById("userRemarks")
     let userRemarksVal = userRemarks.value
 
-    PreOrderNow(userNameVal, userEmailVal,userVariantVal,userQuantityVal,userRemarksVal)
+    bookNow(userNameVal, userEmailVal,userVariantVal,userQuantityVal,userRemarksVal)
 })
 
 

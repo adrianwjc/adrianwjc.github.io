@@ -58,7 +58,7 @@ function DeleteBooking(id){
         method: 'DELETE',
     }) 
             .then(() => {
-            alert("Your Selection " + id + " been remove ")
+            alert("Your Selection " + id + " deleted ")
             getBooking()
         });
 }
