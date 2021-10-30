@@ -16,6 +16,6 @@ function minMaxAverage (arry){
     return [min, max, totalAverage] 
 }
 
-let arry = [1,34,4,5,6,7]
+let arry = [1,2,4,5,6,7]
 
 console.log(minMaxAverage([arry]))
