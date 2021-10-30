@@ -23,7 +23,7 @@ function getBooking(){
             let gVariant = json.preorder[i].variant;
             let gQuantity = json.preorder[i].quantity;
             let gRemarks = json.preorder[i].remarks;
-            let gId = json.booking[i].id;
+            let gId = json.preorder[i].id;
             let btnId = "delete" + gId
 
             let row = bookingNameList.insertRow(bookingNameList.rows.length)
