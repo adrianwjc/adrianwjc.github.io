@@ -17,13 +17,13 @@ function getBooking(){
             bookingNameList.deleteRow(k)
         }
 
-        for( let i = 0; i<json.bookings.length; i++){
+        for( let i = 0; i<json.booking.length; i++){
             let gName = json.bookings[i].name;
-            let gEmail = json.bookings[i].email;
-            let gVariant = json.bookings[i].variant;
-            let gQuantity = json.bookings[i].quantity;
-            let gRemarks = json.bookings[i].remarks;
-            let gId = json.bookings[i].id;
+            let gEmail = json.booking[i].email;
+            let gVariant = json.booking[i].variant;
+            let gQuantity = json.booking[i].quantity;
+            let gRemarks = json.booking[i].remarks;
+            let gId = json.booking[i].id;
             let btnId = "delete" + gId
 
             let row = bookingNameList.insertRow(bookingNameList.rows.length)
