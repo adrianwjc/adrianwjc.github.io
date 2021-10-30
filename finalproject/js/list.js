@@ -20,8 +20,8 @@ function getBooking(){
         for( let i = 0; i<json.preOrder.length; i++){
             let gName = json.preOrder[i].name;
             let gEmail = json.preOrder[i].email;
-            let gCourt = json.preOrder[i].variant;
-            let gHour = json.preOrder[i].quantity;
+            let gVariant = json.preOrder[i].variant;
+            let gQuantity = json.preOrder[i].quantity;
             let gRemarks = json.preOrder[i].remarks;
             let gId = json.preOrder[i].id;
             let btnId = "delete"+ gId
