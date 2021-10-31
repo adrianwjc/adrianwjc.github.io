@@ -54,10 +54,11 @@ function getBooking() {
 
 function DeleteBooking(id) {
 
-    let url = 'https://api.sheety.co/3916d578b401ffa66a19148295d570ad/finalProject/bookings';
+    let url = 'https://api.sheety.co/3916d578b401ffa66a19148295d570ad/finalProject/bookings/' + id;
     fetch(url, {
         method: 'DELETE',
     })
+
         .then(() => {
             alert("Your Selection " + id + " deleted ")
             getBooking()
