@@ -9,7 +9,7 @@ function getBooking() {
         .then((response) => response.json())
         .then(json => {
             // Do something with the data
-            console.log(json.booking);
+            console.log(json.prebooking);
             let bookingNameList = document.getElementById("bookingNameList")
             let bookingIds = []
 
@@ -18,13 +18,13 @@ function getBooking() {
                 bookingNameList.deleteRow(k)
             }
             // Load all rows from Sheety API
-            for (let i = 0; i < json.booking.length; i++) {
-                let gName = json.booking[i].name;
-                let gEmail = json.booking[i].email;
-                let gVariant = json.booking[i].variant;
-                let gQuantity = json.booking[i].quantity;
-                let gRemarks = json.booking[i].remarks;
-                let gId = json.booking[i].id;
+            for (let i = 0; i < json.prebooking.length; i++) {
+                let gName = json.prebooking[i].name;
+                let gEmail = json.prebooking[i].email;
+                let gVariant = json.prebooking[i].variant;
+                let gQuantity = json.prebooking[i].quantity;
+                let gRemarks = json.prebooking[i].remarks;
+                let gId = json.prebooking[i].id;
                 let btnId = "delete" + gId
 
                 let row = bookingNameList.insertRow(bookingNameList.rows.length)
