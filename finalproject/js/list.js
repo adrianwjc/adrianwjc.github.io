@@ -25,7 +25,7 @@ function GetBooking() {
                 let gQuantity = json.bookings[i].quantity;
                 let gRemarks = json.bookings[i].remarks;
                 let gId = json.bookings[i].id;
-                let btnId = "delete" + gId
+                let btnId = "delete" + gId;
 
                 let row = bookingNameList.insertRow(bookingNameList.rows.length)
                 row.insertCell(0).innerHTML = gId
