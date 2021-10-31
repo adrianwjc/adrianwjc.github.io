@@ -9,7 +9,7 @@ function getBooking() {
         .then((response) => response.json())
         .then(json => {
             // Do something with the data
-            console.log(json.prebooking);
+            console.log(json.booking);
             let bookingNameList = document.getElementById("bookingNameList")
             let bookingIds = []
 
