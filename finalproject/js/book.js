@@ -41,6 +41,6 @@ function bookNow(userName, userEmail, userVariant, userQuantity,userRemarks){
     .then(json => {
         // Do something with object
         console.log(json.booking);
-        alert(json.bookings.name +" have pre-ordered " + json.bookings.variant + " quantity " + json.bookings.quantity + " in the list.")
+        alert(json.booking.name +" have pre-ordered " + json.booking.variant + " quantity " + json.booking.quantity + " in the list.")
     });
 }
