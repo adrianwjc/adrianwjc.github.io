@@ -15,11 +15,11 @@ bookNowBtn.addEventListener("click",function(){
     let userRemarks  = document.getElementById("userRemarks")
     let userRemarksVal = userRemarks.value
 
-    bookNow(userNameVal, userEmailVal,userVariantVal,userQuantityVal,userRemarksVal)
+    preOrderNow(userNameVal, userEmailVal,userVariantVal,userQuantityVal,userRemarksVal)
 })
 
 
-function bookNow(userName, userEmail, userVariant, userQuantity,userRemarks){
+function preOrderNow(userName, userEmail, userVariant, userQuantity,userRemarks){
     let url = 'https://api.sheety.co/3916d578b401ffa66a19148295d570ad/finalProject/bookings';
     let body = {
         booking: {
