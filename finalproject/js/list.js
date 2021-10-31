@@ -1,9 +1,9 @@
 let refreshNowBtn = document.getElementById("refreshNow")
 refreshNowBtn.addEventListener("click", function () {
-    getBooking()
+    GetBooking()
 })
 
-function getBooking() {
+function GetBooking() {
     let url = 'https://api.sheety.co/3916d578b401ffa66a19148295d570ad/finalProject/bookings';
     fetch(url)
         .then((response) => response.json())
@@ -49,9 +49,6 @@ function getBooking() {
         })
 };
 
-
-
-
 function DeleteBooking(id) {
 
     let url = 'https://api.sheety.co/3916d578b401ffa66a19148295d570ad/finalProject/bookings/' + id;
@@ -61,6 +58,6 @@ function DeleteBooking(id) {
 
         .then(() => {
             alert("Your Selection " + id + " deleted ")
-            getBooking()
+            GetBooking()
         });
 }
